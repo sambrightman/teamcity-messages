@@ -26,8 +26,8 @@ class TeamcityReport(base.BaseFormatter):
 
     @classmethod
     def parse_options(cls, options):
-        if not options.no_teamcity:
-            if options.teamcity or is_running_under_teamcity():
+        if not getattr(options, 'no_teamcity', False):
+            if getattr(options, 'teamcity', is_running_under_teamcity()) or is_running_under_teamcity():
                 options.format = 'teamcity-messages'
 
     def format(self, error):
