@@ -18,6 +18,7 @@ following testing frameworks and tools:
    library) <https://docs.python.org/2/library/unittest.html>`__
 -  `Trial (Twisted) <http://twistedmatrix.com/trac/wiki/TwistedTrial>`__
 -  `Flake8 <https://flake8.readthedocs.org/>`__
+-  `Behave <https://behave.readthedocs.io/>`__
 
 Installation
 ------------
@@ -103,7 +104,7 @@ tox
 ~~~
 
 Pass TEAMCITY_VERSION environment variable inside your test virtenv.
-TEAMCITY_VERSION environment variable exists during build on Teamcity.
+TEAMCITY_VERSION environment variable exists during build on TeamCity.
 teamcity-messages uses it in order to enable reporting to TeamCity.
 
 ::
